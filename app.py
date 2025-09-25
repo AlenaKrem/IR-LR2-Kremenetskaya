@@ -3,5 +3,10 @@ app = Flask(_name_)
 @app.route("/")
 def hello_world():
     return "Hello, World!"
+
+@app.route("/about")
+def about():
+    return "This is the About page"
+
 if__name__=="__main__":
     app.run(host="0.0.0.0", port=8080)
